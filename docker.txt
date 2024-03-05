@@ -1,0 +1,13 @@
+Docker Port Expose
+==================
+sudo su
+yum update -y
+yum install docker -y
+service docker start
+docker run -td -name techserver -p 80:80 ubuntu
+docker port techserver
+docker exec -it techserver /bin/bash
+apt-get update
+apt-get install apache2
+cd /var/www/html
+echo "Subscribe Hamza Tech Tunes" > index.html
