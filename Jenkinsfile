@@ -1,26 +1,32 @@
 pipeline{
     agent any
-
+    }
     stages{
         stage("A"){
             steps{
                 echo "========executing A========"
             }
-             stages{
-        stage("B"){
+        }
+        stage("A"){
             steps{
                 echo "========executing A========"
             }
-             stages{
-        stage("C"){
+        }
+        stage("A"){
             steps{
                 echo "========executing A========"
             }
-             stages{
-        stage("D"){
+        }
+        stage("A"){
             steps{
                 echo "========executing A========"
             }
+        }
+        stage("A"){
+            steps{
+                echo "========executing A========"
+            }
+        }
         }
     }
     post{
