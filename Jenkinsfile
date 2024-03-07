@@ -1,7 +1,7 @@
-pipeline{
+pipeline {
     agent any
-    
-     stages {
+
+    stages {
         stage('Hello') {
             steps {
                 echo 'Hello World'
@@ -25,17 +25,5 @@ pipeline{
                 echo 'Hello World'
             }
         }
-    
-    post{
-        always{
-            echo "========always========"
-        }
-        success{
-            echo "========pipeline executed successfully ========"
-        }
-        failure{
-            echo "========pipeline execution failed========"
-        }
     }
-}
 }
