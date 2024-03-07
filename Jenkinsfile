@@ -1,34 +1,31 @@
 pipeline{
     agent any
-    }
-    stages{
-        stage("A"){
-            steps{
-                echo "========executing A========"
+    
+     stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
             }
         }
-        stage("A"){
-            steps{
-                echo "========executing A========"
+        
+        stage('Build') {
+            steps {
+                echo 'Hello World'
             }
         }
-        stage("A"){
-            steps{
-                echo "========executing A========"
+        
+        stage('Test') {
+            steps {
+                echo 'Hello World'
             }
         }
-        stage("A"){
-            steps{
-                echo "========executing A========"
+        
+        stage('Deploy') {
+            steps {
+                echo 'Hello World'
             }
         }
-        stage("A"){
-            steps{
-                echo "========executing A========"
-            }
-        }
-        }
-    }
+    
     post{
         always{
             echo "========always========"
@@ -40,4 +37,5 @@ pipeline{
             echo "========pipeline execution failed========"
         }
     }
+}
 }
